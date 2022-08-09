@@ -1,0 +1,170 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+header{
+    height: 60vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(assets/lear.jpg);
+    background-position: center;
+    
+    background-size: cover;
+    position: relative;
+    
+}
+nav{
+    display: flex;
+    padding: 1% 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+.links{
+   flex: 1;
+   text-align: right;
+   margin-top: -4%;
+   
+}
+.links ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: gold;
+    position: absolute;
+    display: block;
+    margin: auto;
+   
+    transition: width 0.5s;
+}
+.links ul li:hover::after{
+    width: 100%;
+
+}
+.content-head{
+    text-align: center;
+    margin: 2% auto;
+}
+.content-head h3{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 2%;
+}
+.content-head p{
+    color: gray;
+    font-size: 15px;
+}
+.container{
+    text-align: center;
+    
+}
+
+.logo-txt h2 {
+    margin:4%;
+    text-align: center;
+}
+.txt::after{
+      content: '';
+      height: 5px;
+      width: 24%;
+      position: absolute;
+     
+      display: block;
+      margin: auto;
+      left: 38%;
+}
+.log-cont{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: white;
+    margin: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 25px rgba(4,9,30,0.7);
+    transition: transform 1s;
+
+}
+.card:hover{
+    transform: translateY(-5%);
+}
+.ci{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: gold;
+    clip-path: circle(150px at center 0);
+    text-align: center;
+
+
+}
+.ci h2{
+    color: white;
+    font-size: 4.5rem;
+    padding: 30px 0;
+}
+.content{
+    
+    transform: translateY(-500%);
+  
+    text-align: center;
+    
+}
+p{
+    color: #666;
+    font-size: 20px;
+}
+footer{
+    background: #111;
+    height: auto;
+    width: 100%;
+    font-family: 'Open Sans';
+    padding-top: 40px;
+    color: white;
+}
+.footer-cont{
+    
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    display: flex;
+
+}
+.footer-cont h3{
+    font-weight: 400;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    
+
+}
+
+.footer-cont p{
+    
+   margin: 10px auto;
+
+}
+.footer-cont img{
+    border-radius: 50%;
+}
+.footer-cont span{
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px 10px;
+}
+
+
